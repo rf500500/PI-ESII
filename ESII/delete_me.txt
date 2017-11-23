@@ -1,0 +1,45 @@
+(os 2 casos de uso que se seguem serão provavelmente removidos)
+
+2ª Descrição de Caso de Uso
+
+Nome: Reservar Alojamento.
+Descrição: O turista efectua uma reserva de alojamento.
+Pré-condição: O turista fez login válido.
+Caminho Principal:
+1) O turista visita a página web dedicada à reserva de alojamento.
+2) O sistema mostra a lista com os alojamentos disponíveis.
+3) O turista escolhe o alojamento pretendido.
+4) O sistema mostras as opções relacionadas com o meio de pagamento.
+5) O turista escolhe o meio de pagamento.
+6) O sistema mostra o montante a pagar.
+7) O turista efetua o pagamento.
+8) O sistema confirma a que o pagamento e a reserva foram efectuadas com sucesso.
+Caminhos Alternativos:
+2.a) Se não houver alojamentos disponíveis, o sistema mostra a mensagem "Neste momento não temos alojamentos disponíveis".
+3.a) Se o turista não escolher o tipo de quarto, o sistema escolhe automaticamente um quarto de solteiro(a).
+4.a) Se o turista não seleccionar o meio de pagamento o sistema não activa o botão "Avançar".
+6.a) Se o turista não efectuar o pagamento, o sistema não ativa o botão "Concluir Reserva".
+8.a) Se houver erro durante o pagamento, o sistema mostra mensagem no ecrã "Erro ao efectuar pagamento, por favor repita os procedimentos".
+Suplementos: Testar problemas na autenticação, procura de alojamento, procedimentos de pagamento.
+Pós-condição: O sistema envia para o email do turista um agradecimento, confirmação da reserva e a factura.
+
+3ª Descrição de Caso de Uso
+
+Nome: Registar Turista.
+Descrição: O turista cria o seu perfil de utilizador
+Pré-condição: nenhuma.
+Caminho Principal:
+1) O turista acede o site e escolhe a opção "Registar".
+2) O sistema mostra formulário de registo para preenchimento de dados pessoais do turista.
+3) O turista preenche todos os campos obrigatórios.
+4) O sistema activa o botão "Submeter".
+5) O turista submete o formulário de registo.
+6) O sistema envia automaticamente para o email do turista o link para confirmação.
+
+7) O turista entra no seu email e confirma o registo no link de confirmação.
+8) O sistema exibe o perfil de utilizador do turista.
+Caminhos Alternativos:
+5.a) Se os campos preenchidos contiverem dados inválidos (email, número de telefone, etc), o sistema realça os campos inválidos.
+6.a) Se o turista não confirmar o registo, o sistema nunca mostrará o perfil do turista.
+Suplementos: Testar problemas na validação de campos, envio de email de confirmação e  autenticação do turista.
+Pós-condição: O sistema envia para o email do turista um agradecimento pelo registo com uma mensagem de boas vindas.
